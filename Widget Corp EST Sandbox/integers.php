@@ -16,6 +16,7 @@
 		Exponential: 			<?php echo pow(2,8); 			?><br />
 		Square root: 			<?php echo sqrt(100); 		?><br />
 		Modulo: 					<?php echo fmod(20,7); 		?><br />
+		<!-- returns the modulo of the division of the arguments-->
 		Random: 					<?php echo rand(); 				?><br />
 		Random (min,max): <?php echo rand(1,10); 		?><br />
 		<br />

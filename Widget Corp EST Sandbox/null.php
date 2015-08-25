@@ -18,6 +18,7 @@
 		var1 is set? <?php echo isset($var1); ?><br />
 		var2 is set? <?php echo isset($var2); ?><br />
 		var3 is set? <?php echo isset($var3); ?><br />
+		<!-- determine if variable is set and not null -->
 		<br />
 		
 		<?php // empty: "", null, 0, 0.0, "0", false, array() ?>
@@ -26,6 +27,7 @@
 		var1 empty? <?php echo empty($var1); ?><br />
 		var2 empty? <?php echo empty($var2); ?><br />
 		var3 empty? <?php echo empty($var3); ?><br />
-		
+		<!-- A variable is considered empty if it does not 
+		exist or if its value equals FALSE.--> 
 	</body>
 </html>

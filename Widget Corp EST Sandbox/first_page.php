@@ -12,6 +12,12 @@
 		<?php $company = "Johnson & Johnson"; ?>
 		
 		<a href="second_page.php?id=<?php echo $id; ?>&company=<?php echo rawurlencode($company); ?>"><?php echo $link_name; ?></a>
+<!--
+	rawurlencode()
+Returns a string in which all non-alphanumeric characters except -_.~ have been replaced 
+with a percent (%) sign followed by two hex digits.
+ -->
+
 
 	</body>
 </html>

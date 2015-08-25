@@ -19,7 +19,12 @@
 		</pre>
 		<br />
 		Implode: 			<?php echo $num_string = implode(" * ", $numbers); ?><br />
+		<!-- Returns a string containing a string representation of all the array
+		elements in the same order, with the glue string between each element. -->
+
 		Explode: 			<?php print_r(explode(" * ", $num_string)); ?><br />
+		<!--  Returns an array of strings created by splitting the string parameter on
+		boundaries formed by the delimiter.--> 
 		<br />
 		
 		15 in array?: <?php echo in_array(15, $numbers); // returns T/F ?><br />

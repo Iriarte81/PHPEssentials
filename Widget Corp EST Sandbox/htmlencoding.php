@@ -20,7 +20,10 @@
 		
 			$text = "™£•“—é";
 			echo htmlentities($text);
-		
+		// This function is identical to htmlspecialchars() in all ways, 
+		// except with htmlentities(), all characters which have HTML
+		// character entity equivalents are translated into these entities.
+		 
 		?>
 		
 		<br />
@@ -36,10 +39,20 @@
 		$url .= "?" . "param1=" . urlencode($param1);
 		$url .= "&" . "param2=" . urlencode($param2);
 		?>
-
+		<!-- 
+		Returns a string in which all non-alphanumeric characters 
+		except -_. have been replaced with a percent (%) sign followed
+		by two hex digits and spaces encoded as plus (+) signs
+		-->
 		<a href="<?php echo htmlspecialchars($url); ?>">
 		  <?php echo htmlspecialchars($linktext); ?>
 		</a>
+		<!-- Certain characters have special significance in HTML, 
+		and should be represented by HTML entities if they are to preserve
+		their meanings. This function returns a string with these
+		conversions made. If you require all input substrings that have
+		associated named entities to be translated, use htmlentities() 
+		instead. -->
 		
 	</body>
 </html>

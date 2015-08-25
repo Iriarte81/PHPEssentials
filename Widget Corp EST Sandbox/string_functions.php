@@ -28,9 +28,11 @@
 	Replace by string: <?php echo str_replace("quick", "super-fast", $third); ?><br />
 	<br />
 	Repeat: <?php echo str_repeat($third, 2); ?><br />
+	<!-- returns input repeated multiplier times -->
 	Make substring: <?php echo substr($third, 5, 10); ?><br />
 	Find position: <?php echo strpos($third, "brown"); ?><br />
 	Find character: <?php echo strchr($third, "z"); ?><br />
+	<!--  Returns the portion of string, or FALSE if needle is not found. -->
 	
 	</body>
 </html>
